@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7BReact-App%7D/static/css/main.867310d7.css",
+    "main.js": "/%7BReact-App%7D/static/js/main.43a1876d.js",
+    "index.html": "/%7BReact-App%7D/index.html",
+    "main.867310d7.css.map": "/%7BReact-App%7D/static/css/main.867310d7.css.map",
+    "main.43a1876d.js.map": "/%7BReact-App%7D/static/js/main.43a1876d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.867310d7.css",
+    "static/js/main.43a1876d.js"
+  ]
+}
