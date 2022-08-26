@@ -1,38 +1,235 @@
+/*
+Fonts
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
+
+
+/* media screen */
+
+@media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
+    }
+  }
+
+/* global styles */
+
+ 
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgba(154, 145, 109, 0.9);
+    color: rgba(255, 255, 255, 0.891);
+    line-height: 1.5;
+    font-size: 0.875rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.891);
+  }
+  h1 {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.891);
+ 
+  }
+  h2 {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.891);
+  }
+  h3 {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.891);
+  }
+  h4 {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.891);
+  }
+  p {
+    margin-bottom: 1.25rem;
+    color: rgba(255, 255, 255, 0.891);
+  }
+
+
+/* main content */
+
+.main-heading{
+  padding: 1rem;
+  font-size: 4rem;
+  text-align: center;
+ 
+}
+
+.main-content{
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  
+}
+
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* About content */
+
+.about-h3{
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-p{
+  text-align: center;
+  font-size: 1.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* nav styles */
+
+nav{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 10vh;
+  background-color: rgb(29, 29, 29);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-style{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item{
+  font-size: 20px;
+}
+
+/* Link hover effect */
+
+li {
+  background-image: linear-gradient(
+    to right,
+    #ca3134,
+    #ca3134 50%,
+    rgb(255, 255, 255) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+li:before {
+  content: '';
+  background: #ca3134;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+}
+
+li:hover {
+  background-position: 0;
+}
+
+li:hover::before {
+  width: 100%;
+}
+
+
+
+/* JSON content */
+
+.scp{
+  border: solid 2px black;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 1.5em;
+  box-shadow: 5px 10px #605f5f;
+  padding: 1em;
+}
+
+.scp-h1{
+
+  margin: 0.3em;
+
+}
+
+.scp-h3{
+  margin: 0.6em;
+}
+
+.scp-p{
+
+margin: 1em;
+
+}
+
+/* resposive images */
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin: 10px;
+  /* width: 600px; */
+  height: auto;
+  max-width: 80%;
+}
+
+/* logo */
+
+.logo{
+  width: 75px; 
+  height: auto;
+  max-width: 80%;
 }
